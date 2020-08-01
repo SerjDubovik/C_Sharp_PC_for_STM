@@ -44,6 +44,10 @@
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.button_On_Led = new System.Windows.Forms.Button();
+            this.button_Off_Led = new System.Windows.Forms.Button();
+            this.label_count_connect = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.Main_menu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -161,11 +165,52 @@
             this.toolStripStatusLabel5.Size = new System.Drawing.Size(19, 17);
             this.toolStripStatusLabel5.Text = "    ";
             // 
+            // button_On_Led
+            // 
+            this.button_On_Led.Location = new System.Drawing.Point(48, 85);
+            this.button_On_Led.Name = "button_On_Led";
+            this.button_On_Led.Size = new System.Drawing.Size(89, 46);
+            this.button_On_Led.TabIndex = 7;
+            this.button_On_Led.Text = "Гори";
+            this.button_On_Led.UseVisualStyleBackColor = true;
+            this.button_On_Led.Click += new System.EventHandler(this.button_On_Led_Click);
+            // 
+            // button_Off_Led
+            // 
+            this.button_Off_Led.Location = new System.Drawing.Point(162, 85);
+            this.button_Off_Led.Name = "button_Off_Led";
+            this.button_Off_Led.Size = new System.Drawing.Size(89, 46);
+            this.button_Off_Led.TabIndex = 8;
+            this.button_Off_Led.Text = "Не гори";
+            this.button_Off_Led.UseVisualStyleBackColor = true;
+            this.button_Off_Led.Click += new System.EventHandler(this.button_Off_Led_Click);
+            // 
+            // label_count_connect
+            // 
+            this.label_count_connect.Location = new System.Drawing.Point(128, 453);
+            this.label_count_connect.Name = "label_count_connect";
+            this.label_count_connect.Size = new System.Drawing.Size(63, 16);
+            this.label_count_connect.TabIndex = 24;
+            this.label_count_connect.Text = "NuN";
+            this.label_count_connect.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(28, 455);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 18);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Проверка связи:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 513);
+            this.Controls.Add(this.label_count_connect);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.button_Off_Led);
+            this.Controls.Add(this.button_On_Led);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.Main_menu);
             this.Name = "Form1";
@@ -197,6 +242,10 @@
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
+        private System.Windows.Forms.Button button_On_Led;
+        private System.Windows.Forms.Button button_Off_Led;
+        private System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label label_count_connect;
     }
 }
 

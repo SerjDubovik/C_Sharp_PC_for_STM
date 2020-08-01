@@ -28,19 +28,16 @@ namespace BluePill_RTOS_PC
 
 		public static ushort[] modbus_mass = new ushort[200];                               // массив для взаимодействия с потоком обработки модбас
 
-		public double const_volt = 118.0;
-		public double const_volt_max = 1.0;
-
 		public Property_Form property_Form;                                                 // Объявляем класс с формой настроек				
 
 		public Class_visu_prop_grid_modbus visu_MyClass_modbus = new Class_visu_prop_grid_modbus(); // создаём экземпляр класса для отображения в сетке свойств настроек modbus
 
-		Serializable_Class serializable_Class;
+		public Serializable_Class serializable_Class;
 
-		SerialPort serialPort = new SerialPort();                                           // create a new SerialPort object with default settings.			
+		public SerialPort serialPort = new SerialPort();                                           // create a new SerialPort object with default settings.			
 
 		public ModBus_var modBus_var = new ModBus_var();                                    // создаём экземпляр класса для передачи в поток
-		Thread Thread_Modbus = new Thread(new ParameterizedThreadStart(Modbus_func));       // Вот так передаём в созданный поток класс
+		public Thread Thread_Modbus = new Thread(new ParameterizedThreadStart(Modbus_func));       // Вот так передаём в созданный поток класс
 
 		public static ModbusSerialMaster master;
 
@@ -91,11 +88,21 @@ namespace BluePill_RTOS_PC
 
         private void timer_for_Displ_Tick(object sender, EventArgs e)
         {
+			label_count_connect.Text = Convert.ToString(modBus_var.mb_mass[8]);
+		}
 
-        }
+        private void button_On_Led_Click(object sender, EventArgs e)						// светодиод на 13-й ножке
+        {
+			modBus_var.mb_mass[0] = 1;
+		}
+
+        private void button_Off_Led_Click(object sender, EventArgs e)						// светодиод на 13-й ножке
+		{
+			modBus_var.mb_mass[0] = 2;
+		}
     }
 
-	public class ModBus_var
+    public class ModBus_var
 	{
 		public byte adrr_dev_in;
 		public ushort adrr_var_in;

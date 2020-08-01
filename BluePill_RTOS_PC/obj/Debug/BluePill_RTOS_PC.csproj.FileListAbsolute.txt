@@ -1,12 +1,13 @@
 D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\bin\Debug\BluePill_RTOS_PC.exe.config
 D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\bin\Debug\BluePill_RTOS_PC.exe
 D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\bin\Debug\BluePill_RTOS_PC.pdb
-D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.csprojAssemblyReference.cache
+D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\bin\Debug\nmodbuspc.dll
+D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.Form1.resources
 D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.Properties.Resources.resources
 D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.csproj.GenerateResource.cache
 D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.csproj.CoreCompileInputs.cache
+D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.csproj.CopyComplete
 D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.exe
 D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.pdb
-D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.Form1.resources
-D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\bin\Debug\nmodbuspc.dll
-D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.csproj.CopyComplete
+D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\bin\Debug\log4net.dll
+D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.csprojAssemblyReference.cache

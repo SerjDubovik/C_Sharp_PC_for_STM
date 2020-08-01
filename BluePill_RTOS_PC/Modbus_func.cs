@@ -12,10 +12,7 @@ namespace BluePill_RTOS_PC
 		
 		
 		public void connect_modbus()
-		{
-			
-			//F.visu_MyClass_modbus.nomber_net_method = F.nomber_net_buf;			// номер устройства для связи
-			
+		{									
 					
 			serialPort.PortName 	= post_buf;									// СОМ порт для каждого канала
 			serialPort.BaudRate 	= Convert.ToInt32(speed_net_buf);			// скорость передачи по выбранному каналу модбас
@@ -82,8 +79,8 @@ namespace BluePill_RTOS_PC
 		
 		public static void Modbus_func(object obj)                                     // метод потока. для работы с ком портом
 		{
-			
-			ModBus_var	modBus_var = (ModBus_var)obj;
+
+			ModBus_var modBus_var = (ModBus_var)obj;
 			
 			bool enable_loop = true;
 						
@@ -98,27 +95,17 @@ namespace BluePill_RTOS_PC
             	}
             	
     	        try
-                {                    
-    	        	   	        	
-    	        	
-    	        	ushort[] registerin;
-    	        	registerin = master.ReadInputRegisters(modBus_var.adrr_dev_in, 6 , 4);			// чтение параметров
-    	        	
-    	        	modBus_var.mb_mass[10]  = registerin[0];
+                {
+                    ushort[] register;
 
-   	        	    	        	
-    	        	
-    	        	ushort[] register = new ushort[9];  											// запись параметров
 
-    	        	register[0] = modBus_var.mb_mass[1];
+                    register = master.ReadHoldingRegisters(modBus_var.adrr_dev_in, 8, 2);           //  счётчик для проверки связи
+                    modBus_var.mb_mass[8] = register[0];
 
-    	        	
-    	        	
-    	        	master.WriteMultipleRegisters(modBus_var.adrr_dev_in, 0, register);
-    	        	
-    	        	    	        		
-					
-    	        }
+
+                    master.WriteSingleRegister(modBus_var.adrr_dev_in, 0, modBus_var.mb_mass[0]); // битовая маска управления
+                   
+                }
     	        	       	        	                
                 catch { }
             	               	
