@@ -7,3 +7,6 @@ D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.csp
 D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.csproj.CoreCompileInputs.cache
 D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.exe
 D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.pdb
+D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.Form1.resources
+D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\bin\Debug\nmodbuspc.dll
+D:\GIT\GitHub\C_Sharp_PC_for_STM\BluePill_RTOS_PC\obj\Debug\BluePill_RTOS_PC.csproj.CopyComplete
