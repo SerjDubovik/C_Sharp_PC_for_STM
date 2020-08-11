@@ -48,6 +48,8 @@
             this.button_Off_Led = new System.Windows.Forms.Button();
             this.label_count_connect = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label_var_9 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.Main_menu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -202,11 +204,30 @@
             this.label9.TabIndex = 23;
             this.label9.Text = "Проверка связи:";
             // 
+            // label_var_9
+            // 
+            this.label_var_9.Location = new System.Drawing.Point(346, 449);
+            this.label_var_9.Name = "label_var_9";
+            this.label_var_9.Size = new System.Drawing.Size(63, 16);
+            this.label_var_9.TabIndex = 26;
+            this.label_var_9.Text = "NuN";
+            this.label_var_9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(246, 451);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 18);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Проверка связи:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 513);
+            this.Controls.Add(this.label_var_9);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label_count_connect);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button_Off_Led);
@@ -246,6 +267,8 @@
         private System.Windows.Forms.Button button_Off_Led;
         private System.Windows.Forms.Label label9;
         public System.Windows.Forms.Label label_count_connect;
+        public System.Windows.Forms.Label label_var_9;
+        private System.Windows.Forms.Label label2;
     }
 }
 
