@@ -89,7 +89,10 @@ namespace BluePill_RTOS_PC
         private void timer_for_Displ_Tick(object sender, EventArgs e)
         {
 			label_count_connect.Text = Convert.ToString(modBus_var.mb_mass[8]);				// тестовый счётчик в потоке модбаса в плате
-			label_var_9.Text = Convert.ToString(modBus_var.mb_mass[9]);						// тестовый счётчик в поточе квадрашины в плате
+
+			label_var_9.Text = Convert.ToString((modBus_var.mb_mass[9]/10.0));                      // тестовый счётчик в потоке квадрашины в плате
+			label_var_10.Text = Convert.ToString((modBus_var.mb_mass[10] / 10.0));
+			label_var_11.Text = Convert.ToString((modBus_var.mb_mass[11] / 10.0));
 		}
 
         private void button_On_Led_Click(object sender, EventArgs e)						// светодиод на 13-й ножке

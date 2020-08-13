@@ -106,8 +106,14 @@ namespace BluePill_RTOS_PC
 					register = master.ReadHoldingRegisters(modBus_var.adrr_dev_in, 9, 2);           //  счётчик для проверки связи
 					modBus_var.mb_mass[9] = register[0];
 
+					register = master.ReadHoldingRegisters(modBus_var.adrr_dev_in, 10, 2);           //  счётчик для проверки связи
+					modBus_var.mb_mass[10] = register[0];
 
-					master.WriteSingleRegister(modBus_var.adrr_dev_in, 0, modBus_var.mb_mass[0]);	// 
+					register = master.ReadHoldingRegisters(modBus_var.adrr_dev_in, 11, 2);           //  счётчик для проверки связи
+					modBus_var.mb_mass[11] = register[0];
+
+
+					master.WriteSingleRegister(modBus_var.adrr_dev_in, 0, modBus_var.mb_mass[0]);	 // 
                    
                 }
     	        	       	        	                

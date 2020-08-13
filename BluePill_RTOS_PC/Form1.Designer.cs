@@ -50,6 +50,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label_var_9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label_var_10 = new System.Windows.Forms.Label();
+            this.label_var_11 = new System.Windows.Forms.Label();
             this.Main_menu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -206,7 +208,7 @@
             // 
             // label_var_9
             // 
-            this.label_var_9.Location = new System.Drawing.Point(346, 449);
+            this.label_var_9.Location = new System.Drawing.Point(380, 453);
             this.label_var_9.Name = "label_var_9";
             this.label_var_9.Size = new System.Drawing.Size(63, 16);
             this.label_var_9.TabIndex = 26;
@@ -215,17 +217,37 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(246, 451);
+            this.label2.Location = new System.Drawing.Point(246, 454);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 18);
+            this.label2.Size = new System.Drawing.Size(126, 18);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Проверка связи:";
+            this.label2.Text = "Температура датчиков:";
+            // 
+            // label_var_10
+            // 
+            this.label_var_10.Location = new System.Drawing.Point(458, 453);
+            this.label_var_10.Name = "label_var_10";
+            this.label_var_10.Size = new System.Drawing.Size(63, 16);
+            this.label_var_10.TabIndex = 27;
+            this.label_var_10.Text = "NuN";
+            this.label_var_10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label_var_11
+            // 
+            this.label_var_11.Location = new System.Drawing.Point(546, 452);
+            this.label_var_11.Name = "label_var_11";
+            this.label_var_11.Size = new System.Drawing.Size(63, 16);
+            this.label_var_11.TabIndex = 28;
+            this.label_var_11.Text = "NuN";
+            this.label_var_11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 513);
+            this.Controls.Add(this.label_var_11);
+            this.Controls.Add(this.label_var_10);
             this.Controls.Add(this.label_var_9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label_count_connect);
@@ -269,6 +291,8 @@
         public System.Windows.Forms.Label label_count_connect;
         public System.Windows.Forms.Label label_var_9;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label_var_10;
+        public System.Windows.Forms.Label label_var_11;
     }
 }
 
